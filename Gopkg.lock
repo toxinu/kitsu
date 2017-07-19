@@ -1,0 +1,13 @@
+memo = "1ae1b4e794d0a308d516e641bb65b0ef61bf35685ea04ca89bcd142f085ca92c"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/rjeczalik/notify"
+  packages = ["."]
+  revision = "660542b98f76c58910002c82e912b71248f4daa0"
+
+[[projects]]
+  branch = "master"
+  name = "golang.org/x/sys"
+  packages = ["unix"]
+  revision = "9ccfe848b9db8435a24c424abbc07a921adf1df5"

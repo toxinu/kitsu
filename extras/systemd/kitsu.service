@@ -1,0 +1,20 @@
+[Unit]
+Description=kitsu service
+
+[Service]
+ExecStart= \
+    <path_to_kitsu_binary> \
+        -max-versions=10 \
+        -exclude ".git" \
+        -exclude "node_modules" \
+        -exclude ".*\\.pyc" \
+        -exclude "__pycache__" \
+        <source> <destination>
+
+Restart=always
+RestartSec=10s
+LimitNOFILE=40000
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target
